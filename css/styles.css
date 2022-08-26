@@ -1,0 +1,216 @@
+/* ============= global style =========== */
+:root {
+  --main-font: poppins, sans-serif;
+  --black-txt-color: #000000;
+  --grey-logo-color: #939393;
+  --second-txt-color: #263238;
+  --white-color: #ffffff;
+  --main-txt-color: #8f95a5;
+  --card-bcg-color: #f5f5f5;
+  --number-txt-color: #2a3246;
+  --time-text-color: #546269;
+}
+
+/* ========== main selector ============== */
+.page {
+  font-family: var(--main-font);
+}
+.button {
+  font-family: inherit;
+}
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* =============== header ============ */
+/* =========== logo style ============ */
+.list-item > .link-logo,
+.list-item > .link-logo:hover,
+.list-item > .link-logo:focus,
+.list-item > .link-logo:active {
+  color: var(--black-txt-color);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(54 / 36);
+}
+.link-logo > .logo-txt,
+.link-logo > .logo-txt:hover,
+.link-logo > .logo-txt:focus,
+.link-logo > .logo-txt:active {
+  color: var(--grey-logo-color);
+}
+/* =========== navigation style ========== */
+
+.link-nav {
+  color: var(--second-txt-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+}
+.link-nav:hover,
+.link-nav:focus,
+.link-nav:active {
+  color: orangered;
+}
+
+.button-nav {
+  background-color: transparent;
+  border-color: var(--second-txt-color);
+  border-radius: 10px;
+}
+
+.button-nav:hover,
+.button-nav:focus,
+.button-nav:active {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* ================ hero section style ================*/
+.main-title {
+  font-size: 64px;
+  line-height: calc(80 / 64);
+}
+
+.main-text {
+  color: var(--main-txt-color);
+  font-size: 24px;
+  line-height: 36px;
+}
+.btn-hero {
+  border: none;
+  color: var(--white-color);
+  background-color: var(--second-txt-color);
+  border-radius: 10px;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+}
+
+.btn-hero:hover,
+.btn-hero:focus,
+.btn-hero:active {
+  color: black;
+  background-color: grey;
+}
+/* ============ main content style ============= */
+
+/* =========== skills section style =============== */
+
+.second-title {
+  font-size: 48px;
+}
+.second-item {
+  background-color: var(--card-bcg-color);
+}
+.section-title {
+  color: var(--second-txt-color);
+  font-size: 30px;
+  line-height: calc(45 / 30);
+}
+.section-text {
+  color: var(--main-txt-color);
+}
+.link-second {
+  color: var(--white-color);
+  background-color: var(--second-txt-color);
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: calc(27 / 18);
+}
+.link-second:hover,
+.link-second:active,
+.link-second:focus {
+  color: black;
+  background-color: grey;
+}
+
+/* ================== about us section style ========== */
+
+.title-about {
+  color: var(--black-txt-color);
+  font-size: 48px;
+}
+.section-about > .section-text {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.main-about {
+  color: var(--number-txt-color);
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.second-text {
+  color: var(--main-txt-color);
+  font-size: 20px;
+}
+
+/* ===== pricing section styles========== */
+
+.section-title.price-title {
+  color: var(--black-txt-color);
+  font-size: 48px;
+}
+
+.block-title {
+  color: var(--second-txt-color);
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.block-text {
+  color: var(--main-txt-color);
+  font-size: 20px;
+  line-height: calc(30 / 20);
+}
+
+.price-text {
+  color: var(--second-txt-color);
+  font-size: 24px;
+  line-height: calc(36 / 24);
+}
+
+.time-text {
+  color: var(--time-text-color);
+  font-size: 18px;
+}
+
+/* ========= contact section style====== */
+
+.contact-title {
+  color: var(--black-txt-color);
+  font-size: 48px;
+}
+
+.section-contact > .section-text {
+  font-size: 20px;
+  line-height: calc(30 / 20);
+}
+
+.form > .button {
+  color: var(--white-color);
+  background-color: var(--second-txt-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.policy-item .link {
+  color: var(--main-txt-color);
+  font-size: 24px;
+  line-height: calc(36 / 24);
+  letter-spacing: 0.02em;
+}
+
+.policy-item .link:hover,
+.policy-item .link:focus,
+.policy-item .link:active {
+  color: orangered;
+}
