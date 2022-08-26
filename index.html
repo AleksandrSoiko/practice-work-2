@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Britlex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,44 +19,51 @@
   </head>
   <body class="page">
     <header class="header">
-      <nav class="nav">
-        <ul class="list">
-          <li class="list-item">
-            <a href="./index.html" class="link link-logo"
-              >Brit<span class="logo-txt">lex</span>
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="./index.html" class="link link-nav">Home</a>
-          </li>
-          <li class="list-item">
-            <a href="" class="link link-nav">Skills</a>
-          </li>
-          <li class="list-item">
-            <a href="" class="link link-nav">About Us</a>
-          </li>
-          <li class="list-item">
-            <a href="" class="link link-nav">Pricing</a>
-          </li>
-          <li class="list-item">
-            <a href="" class="link link-nav">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="button button-nav" type="button">Let's Talk</button>
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="./index.html" class="link link-logo"
+            >Brit<span class="logo-txt">lex</span>
+          </a>
+          <ul class="list header-list">
+            <li class="list-item">
+              <a href="./index.html" class="link link-nav">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link link-nav">Skills</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link link-nav">About Us</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link link-nav">Pricing</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link link-nav">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button button-nav" type="button">Let's Talk</button>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="main-title">Learn Any Foreign Language</h1>
-        <img class="img" src="./images/lamp.svg" alt="Lamp" />
-        <p class="main-text">
-          With our teachers who write a program for each student, you will be
-          able to make your first sketch after the first lesson.
-        </p>
-        <button class="button btn-hero" type="button">Get started</button>
-        <img class="img" src="./images/hero.svg" alt="Our language lessons" />
+        <div class="container container-hero">
+          <div class="hero-txt">
+            <div class="title-icon">
+              <h1 class="main-title">Learn<br> Any Foreign Language</h1>
+              <img class="img" src="./images/lamp.svg" alt="Lamp" />
+            </div>
+            <p class="main-text">
+              With our teachers who write a program for each student, you will
+              be able to make your first sketch after the first lesson.
+            </p>
+            <button class="button btn-hero" type="button">Get started</button>
+          </div>
+          <img class="img img-hero" src="./images/hero.svg" alt="Our language lessons" />
+        </div>
       </section>
       <section class="section">
+        <div class="container">
         <h2 class="second-title">Skills</h2>
         <ul class="list">
           <li class="list-item second-item">
@@ -65,7 +76,7 @@
               high-quality courses and resources – all designed for adult
               language learners.
             </p>
-           <a class="link link-second" href="">Learn more</a>
+            <a class="link link-second" href="">Learn more</a>
           </li>
           <li class="list-item second-item">
             <img class="img" src="./images/skills-2.svg" alt="second skills" />
@@ -95,6 +106,7 @@
             <a class="link link-second" href="">Learn more</a>
           </li>
         </ul>
+        </div>
       </section>
       <section class="section section-about">
         <h2 class="section-title title-about">About Us</h2>

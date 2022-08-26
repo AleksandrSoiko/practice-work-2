@@ -25,12 +25,78 @@
   text-decoration: none;
 }
 
+.container {
+  width: 1368px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ======== utilities ================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
 /* =============== header ============ */
+
+.page {
+  padding-top: 52px;
+}
+
+.header-container {
+  display: flex;
+  padding-top: 3px;
+  padding-bottom: 55px;
+}
+
+.nav {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
 /* =========== logo style ============ */
-.list-item > .link-logo,
-.list-item > .link-logo:hover,
-.list-item > .link-logo:focus,
-.list-item > .link-logo:active {
+
+.nav > .link-logo {
+  margin-right: 236px;
+
+  color: var(--black-txt-color);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(54 / 36);
+}
+
+.nav > .link-logo:hover,
+.nav > .link-logo:focus,
+.nav > .link-logo:active {
   color: var(--black-txt-color);
   font-weight: 400;
   font-size: 36px;
@@ -45,6 +111,9 @@
 /* =========== navigation style ========== */
 
 .link-nav {
+  padding-top: 23px;
+  padding-bottom: 23px;
+
   color: var(--second-txt-color);
   font-weight: 500;
   font-size: 20px;
@@ -57,6 +126,13 @@
 }
 
 .button-nav {
+  padding: 18px 108px;
+  margin-left: auto;
+
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  letter-spacing: 0.03em;
+
   background-color: transparent;
   border-color: var(--second-txt-color);
   border-radius: 10px;
@@ -70,17 +146,48 @@
 }
 
 /* ================ hero section style ================*/
+
+/* ---------- position hero section ------------------- */
+.hero {
+  padding-bottom: 90px;
+}
+
+.container-hero {
+  display: flex;
+}
+
+.title-icon {
+  display: flex;
+}
+
+.title-icon > .img {
+  margin-left: 34px;
+  padding-top: 66px;
+}
+
+.img-hero {
+  margin-left: 144px;
+}
+
 .main-title {
+  margin-bottom: 40px;
+
   font-size: 64px;
   line-height: calc(80 / 64);
 }
 
 .main-text {
+  margin-bottom: 60px;
+
   color: var(--main-txt-color);
   font-size: 24px;
   line-height: 36px;
 }
+
 .btn-hero {
+  padding: 23px 106px;
+
+  line-height: calc(54 / 36);
   border: none;
   color: var(--white-color);
   background-color: var(--second-txt-color);
@@ -100,19 +207,26 @@
 /* =========== skills section style =============== */
 
 .second-title {
+  text-align: center;
+  margin-bottom: 60px;
+
   font-size: 48px;
 }
+
 .second-item {
   background-color: var(--card-bcg-color);
 }
+
 .section-title {
   color: var(--second-txt-color);
   font-size: 30px;
   line-height: calc(45 / 30);
 }
+
 .section-text {
   color: var(--main-txt-color);
 }
+
 .link-second {
   color: var(--white-color);
   background-color: var(--second-txt-color);
