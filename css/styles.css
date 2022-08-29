@@ -10,6 +10,7 @@
   --number-txt-color: #2a3246;
   --time-text-color: #546269;
   --price-color: #eeeeee;
+  --border-color: #c4c4c4;
 }
 
 /* ========== main selector ============== */
@@ -86,7 +87,7 @@ ul {
 
 /* =========== logo style ============ */
 
-.nav > .link-logo {
+.link-logo {
   margin-right: 236px;
 
   color: var(--black-txt-color);
@@ -95,9 +96,9 @@ ul {
   line-height: calc(54 / 36);
 }
 
-.nav > .link-logo:hover,
-.nav > .link-logo:focus,
-.nav > .link-logo:active {
+.link-logo:hover,
+.link-logo:focus,
+.link-logo:active {
   color: var(--black-txt-color);
   font-weight: 400;
   font-size: 36px;
@@ -219,7 +220,7 @@ ul {
 .skills-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 }
@@ -239,25 +240,30 @@ ul {
 
 .listening-item {
   display: flex;
+  gap: 144px;
 }
 
 /* -------------------------- */
 
 .second-item {
   padding-left: 15px;
+  padding-bottom: 32px;
   border-radius: 10px;
 
   background-color: var(--card-bcg-color);
 }
 
 .section-title {
+  margin-bottom: 20px;
+
   color: var(--second-txt-color);
   font-size: 30px;
   line-height: calc(45 / 30);
 }
 
 .skills-list .section-text {
-width: 324px;
+  width: 320px;
+  margin-bottom: 30px;
 
   color: var(--main-txt-color);
   font-size: 16px;
@@ -265,9 +271,11 @@ width: 324px;
 }
 
 .link-second {
+  display: inline-block;
+  padding: 15px 51px;
+  border-radius: 10px;
   color: var(--white-color);
   background-color: var(--second-txt-color);
-  border-radius: 2px;
   font-size: 18px;
   line-height: calc(27 / 18);
 }
@@ -440,7 +448,28 @@ width: 324px;
 
 /* =========== footer section style ========== */
 
+.footer .container {
+  border-top: 1px solid var(--border-color) ;
+  padding-bottom: 55px;
+}
+
+.footer .list {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-left: auto;
+}
+
 .policy-item .link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.policy-item .link {
+padding-top: 22px;
+padding-bottom: 22px;
+
   color: var(--main-txt-color);
   font-size: 24px;
   line-height: calc(36 / 24);
